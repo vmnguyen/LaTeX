@@ -1,0 +1,108 @@
+\documentclass[a4paper,10pt]{article}
+%\documentclass[a4paper,10pt]{scrartcl}
+
+\usepackage[utf8]{inputenc}
+\usepackage[utf8]{vietnam}
+
+\title{Usecase Description}
+\author{VM Nguyen}
+\date{03/10/2016}
+    
+\pdfinfo{%
+}
+
+\begin{document}
+\maketitle
+\newpage
+\begin{table}[ht]
+ \centering
+ \caption{Xem danh sách các ngưỡng chi tiêu} 
+ \begin{tabular}{| r | l |}
+
+  \hline 
+  ID:  & UC-10 \\ \hline  
+  Title:  & Xem danh sách các ngưỡng chi tiêu  \\ \hline
+  Description: & Người dùng xem lại danh sách các ngưỡng chi tiêu  \\ \hline
+  Primary Actor & Người dùng  \\ \hline
+  Preconditions:  & Người dùng đang ở trang Home của ứng dụng \\ \hline
+  Postconditions: & Người dùng xem được danh sách các ngưỡng chi tiêu \\ \hline
+  Main & {1}. Người dùng nhấn nút chọn tab "Ngưỡng chi tiêu"  \\ 
+       & {2}. Hệ thống hiện thị các ngưỡng chi tiêu hiện có \\ \hline
+  Extensions: & {2a}. Không có ngưỡng thu chi nào  \\ 
+              & \hspace{3mm} - {2a1}. Hệ thống hiển thị dòng chữ: Không có ngưỡng thu chi nào  \\ \hline
+  Frequency of Use: & Thường xuyên  \\ \hline
+  Status: & Chưa bắt đầu  \\ \hline
+  Owner: & Nguyễn Văn Mạnh  \\ \hline
+  Priority: & Quan trọng \\
+  \hline 
+ \end{tabular}
+
+\end{table}
+
+\newpage
+\begin{table}[ht]
+ \centering
+ \caption{Chỉnh sửa ngưỡng chi tiêu} 
+ \begin{tabular}{| r | l |}
+
+  \hline 
+  ID:  & UC-11 \\ \hline  
+  Title:  & Chỉnh sửa ngưỡng chi tiêu  \\ \hline
+  Description: & Người dùng chỉnh sửa các ngưỡng chi tiêu  \\ \hline
+  Primary Actor & Người dùng  \\ \hline
+  Preconditions:  & Người dùng đang ở trang Ngưỡng chi tiêu của ứng dụng \\ \hline
+  Postconditions: & Người dùng chỉnh sửa được ngưỡng chi tiêu \\ \hline
+  Main & {1}. Người dùng nhấn giữ vào một ngưỡng chi tiêu, chọn chỉnh sửa\\
+       & {2}. Người dùng chỉnh sửa những thông tin muốn sửa \\
+       & {3}. Người dùng nhấn nút "Lưu"  \\ \hline
+  Extensions: & {3a} Người dùng nhấn nút "Huỷ"  \\ \hline
+       & \hspace{3mm} - {3a1} Hệ thống thông báo hỏi người dùng có chắc chắn hay không  \\ 
+       & \hspace{3mm} - {3a2} Nếu trả lời là "Có"  \\
+       & \hspace{15mm} + {3a2-1} Hệ thống không ghi nhận thông tin, kết thúc usecase  \\ 
+       & \hspace{12mm}   Ngươc lại   \\
+       & \hspace{15mm} + {3a2-2} Hệ thống đưa người dùng về lại trang chỉnh sửa \\
+       & \hspace{28mm}  với thông tin cũ đã được điền  \\
+  \hline
+  Frequency of Use: & Thường xuyên \\ \hline
+  Status: & Chưa bắt đầu  \\ \hline
+  Owner: & Nguyễn Văn Mạnh  \\ \hline
+  Priority: & Quan trọng \\
+  \hline 
+ \end{tabular}
+
+\end{table}
+
+\newpage
+\begin{table}[ht]
+ \centering
+ \caption{Đặt ngưỡng chi tiêu} 
+ \begin{tabular}{| r | l |}
+
+  \hline 
+  ID:  & UC-12 \\ \hline  
+  Title:  & Đặt ngưỡng chi tiêu  \\ \hline
+  Description: & Người dùng đặt ngưỡng chi tiêu  \\ \hline
+  Primary Actor & Người dùng  \\ \hline
+  Preconditions:  & Người dùng đang ở trang Ngưỡng chi tiêu của ứng dụng \\ \hline
+  Postconditions: & Người dùng đặt được ngưỡng chi tiêu \\ \hline
+    Main & {1}. Người dùng nhấn nhấn nút "Tạo mới"\\
+       & {2}. Người dùng đặt tên cho ngưỡng chi tiêu  \\ 
+       & {3}. Người dùng đặt số tiền cho ngưỡng chi tiêu đã đặt tên ở bước 2 \\
+       & {4}. Người dùng nhấn nút "Lưu"  \\ \hline
+  Extensions: & {4a} Người dùng nhấn nút "Huỷ"  \\ \hline
+       & \hspace{3mm} - {4a1} Hệ thống thông báo hỏi người dùng có chắc chắn hay không  \\ 
+       & \hspace{3mm} - {4a2} Nếu trả lời là "Có"  \\
+       & \hspace{15mm} + {4a2-1} Hệ thống không ghi nhận thông tin, kết thúc usecase  \\ 
+       & \hspace{12mm}   Ngươc lại   \\
+       & \hspace{15mm} + {4a2-2} Hệ thống đưa người dùng về lại trang thêm mới \\
+       & \hspace{28mm}  với thông tin cũ đã được điền  \\
+  \hline
+  Frequency of Use: & Thường xuyên  \\ \hline
+  Status: & Chưa bắt đầu  \\ \hline
+  Owner: & Nguyễn Văn Mạnh  \\ \hline
+  Priority: & Quan trọng \\
+  \hline 
+ \end{tabular}
+
+\end{table}
+\end{document}
